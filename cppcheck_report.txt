@@ -1,0 +1,56 @@
+exercises/networking/echo_server/src/tcp.c:92:6: style: The scope of the variable 'received' can be reduced. [variableScope]
+ int received;
+     ^
+exercises/networking/echo_server/src/tcp.c:108:8: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+   ret = 0;
+       ^
+exercises/networking/echo_server/src/tcp.c:115:8: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+   ret = -errno;
+       ^
+exercises/networking/echo_server/src/tcp.c:144:10: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+     ret = 0;
+         ^
+exercises/networking/echo_server/src/tcp.c:317:0: information: Skipping configuration 'CONFIG_NET_IPV4' since the value of 'CONFIG_NET_IPV4' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (IS_ENABLED(CONFIG_NET_IPV4)) {
+^
+exercises/networking/echo_server/src/tcp.c:37:0: information: Skipping configuration 'CONFIG_USERSPACE' since the value of 'CONFIG_USERSPACE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  IS_ENABLED(CONFIG_USERSPACE) ? K_USER : 0, -1);
+^
+exercises/networking/echo_server/src/udp.c:57:6: style: The scope of the variable 'received' can be reduced. [variableScope]
+ int received;
+     ^
+exercises/networking/echo_server/src/udp.c:28:0: information: Skipping configuration 'CONFIG_USERSPACE' since the value of 'CONFIG_USERSPACE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  IS_ENABLED(CONFIG_USERSPACE) ? K_USER : 0, -1);
+^
+exercises/networking/echo_server_dhcp/src/tcp.c:92:6: style: The scope of the variable 'received' can be reduced. [variableScope]
+ int received;
+     ^
+exercises/networking/echo_server_dhcp/src/tcp.c:108:8: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+   ret = 0;
+       ^
+exercises/networking/echo_server_dhcp/src/tcp.c:115:8: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+   ret = -errno;
+       ^
+exercises/networking/echo_server_dhcp/src/tcp.c:144:10: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+     ret = 0;
+         ^
+exercises/networking/echo_server_dhcp/src/tcp.c:317:0: information: Skipping configuration 'CONFIG_NET_IPV4' since the value of 'CONFIG_NET_IPV4' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (IS_ENABLED(CONFIG_NET_IPV4)) {
+^
+exercises/networking/echo_server_dhcp/src/tcp.c:37:0: information: Skipping configuration 'CONFIG_USERSPACE' since the value of 'CONFIG_USERSPACE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  IS_ENABLED(CONFIG_USERSPACE) ? K_USER : 0, -1);
+^
+exercises/networking/echo_server_dhcp/src/udp.c:57:6: style: The scope of the variable 'received' can be reduced. [variableScope]
+ int received;
+     ^
+exercises/networking/echo_server_dhcp/src/udp.c:28:0: information: Skipping configuration 'CONFIG_USERSPACE' since the value of 'CONFIG_USERSPACE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  IS_ENABLED(CONFIG_USERSPACE) ? K_USER : 0, -1);
+^
+exercises/networking/echo_server/src/tcp.c:86:0: style: The function 'handle_data' is never used. [unusedFunction]
+
+^
+exercises/networking/echo/src/socket_echo.c:29:0: style: The function 'print_ip' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
